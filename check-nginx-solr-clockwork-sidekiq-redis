@@ -1,0 +1,47 @@
+#!/bin/bash
+CHECK=$0
+SERVICE="nginx"
+DATE=`date`
+OUTPUT=$(ps aux | grep -v grep | grep -v $CHECK |grep $SERVICE)
+echo $OUTPUT
+if [ "${#OUTPUT}" -gt 0 ] ;
+then echo "$DATE: $SERVICE service running, everything is fine"
+else echo "$DATE: $SERVICE is not running"
+fi
+
+
+SERVICE1="solr"
+DATE=`date`
+OUTPUT=$(ps aux | grep -v grep | grep -v $CHECK |grep $SERVICE1)
+echo $OUTPUT
+if [ "${#OUTPUT}" -gt 0 ] ;
+then echo "$DATE: $SERVICE1 service running, everything is fine"
+else echo "$DATE: $SERVICE1 is not running"
+fi
+
+SERVICE2="clockwork"
+DATE=`date`
+OUTPUT=$(ps aux | grep -v grep | grep -v $CHECK |grep $SERVICE2)
+echo $OUTPUT
+if [ "${#OUTPUT}" -gt 0 ] ;
+then echo "$DATE: $SERVICE2 service running, everything is fine"
+else echo "$DATE: $SERVICE2 is not running"
+fi
+
+SERVICE3="sidekiq"
+DATE=`date`
+OUTPUT=$(ps aux | grep -v grep | grep -v $CHECK |grep $SERVICE3)
+echo $OUTPUT
+if [ "${#OUTPUT}" -gt 0 ] ;
+then echo "$DATE: $SERVICE3 service running, everything is fine"
+else echo "$DATE: $SERVICE3 is not running"
+fi
+
+SERVICE4="redis"
+DATE=`date`
+OUTPUT=$(ps aux | grep -v grep | grep -v $CHECK |grep $SERVICE4)
+echo $OUTPUT
+if [ "${#OUTPUT}" -gt 0 ] ;
+then echo "$DATE: $SERVICE4 service running, everything is fine"
+else echo "$DATE: $SERVICE4 is not running"
+fi
