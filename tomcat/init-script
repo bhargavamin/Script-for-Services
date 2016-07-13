@@ -12,7 +12,7 @@ export JAVA_HOME=/usr/java/jdk1.8.0_91
 export PATH=$JAVA_HOME/bin:$PATH
 
 #CATALINA_HOME is the location of the bin files of Tomcat
-export CATALINA_HOME=/usr/share/tomcat/apache-tomcat-8.5.3/bin
+export CATALINA_HOME=/usr/share/tomcat/apache-tomcat-8.5.3
 
 #CATALINA_BASE is the location of the configuration files of this instance of Tomcat
 export CATALINA_BASE=/usr/share/tomcat/apache-tomcat-8.5.3
