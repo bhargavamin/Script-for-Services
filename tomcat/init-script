@@ -1,5 +1,7 @@
 #!/bin/bash
-#
+# description: Tomcat8 service
+# processname: java
+# chkconfig: - 99 1
 # description: Apache Tomcat init script
 
 
